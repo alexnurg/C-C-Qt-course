@@ -4,7 +4,8 @@
 #include <QPainter>
 #include <QTime>
 
-class Cat : public QWidget {
+class Cat : public QWidget
+{
 
     public:
       Cat(QWidget *parent = 0);
