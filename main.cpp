@@ -59,8 +59,7 @@ class Cat : public QWidget
 
 Cat::Cat(QWidget *parent) : QWidget(parent)
 {
-
-    setStyleSheet("background-color:blue;");
+    setStyleSheet("background-color:yellow;");
     leftDirection = false;
     rightDirection = true;
     upDirection = false;
@@ -129,7 +128,7 @@ void Cat::gameOver(QPainter &qp)
     QFontMetrics fm(font);
     int textWidth = fm.width(message);
 
-    qp.setPen(QColor(Qt::white));
+    qp.setPen(QColor(Qt::blue));
     qp.setFont(font);
     int h = height();
     int w = width();
