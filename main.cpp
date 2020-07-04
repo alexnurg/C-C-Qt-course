@@ -347,22 +347,30 @@ void Cat::checkCollision()
     {
         upDirection = true;
         downDirection=false;
+        leftDirection = false;
+        rightDirection=false;
     }
     if (y_Cat < 0)
     {
         downDirection = true;
         upDirection=false;
+        leftDirection = false;
+        rightDirection=false;
     }
     if (x_Cat >= B_WIDTH)
     {
         leftDirection = true;
         rightDirection=false;
+        upDirection = false;
+        downDirection=false;
     }
 
     if (x_Cat < 0)
     {
         rightDirection = true;
         leftDirection=false;
+        upDirection = false;
+        downDirection=false;
     }
     if(!inGame)
     {
